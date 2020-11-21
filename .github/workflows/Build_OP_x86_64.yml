@@ -58,6 +58,9 @@ jobs:
         git clone https://github.com/kenzok8/openwrt-packages.git package/kenzo
         git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
         git clone https://github.com/Lienol/openwrt-package package/lienol
+        
+       # git clone https://github.com/xiaobailong6/openwrt-packages.git package/xiaobailong6
+       # git clone https://github.com/xiaobailong6/small.git package/small
        # git clone 其他github插件源码地址 package/文件夹名称  
         
     - name: Configuration Customization - Build_x86_64
@@ -72,8 +75,8 @@ jobs:
     # 复制 SSH 连接命令粘贴到终端内执行，或者复制链接在浏览器中打开使用网页终端。（网页终端可能会遇到黑屏的情况，按 Ctrl + C 即可）
     # 然后输入cd openwrt && make menuconfig
     # 完成后按快捷键Ctrl+D或执行exit命令退出，后续编译工作将自动进行。
-    - name: SSH connection to Actions
-      uses: superstarfly/debugger-action@master
+    # - name: SSH connection to Actions
+    #  uses: superstarfly/debugger-action@master
        
     - name: Download package
       working-directory: ./openwrt
